@@ -4,18 +4,11 @@ import CodeMirror from 'react-codemirror';
 import 'codemirror/lib/codemirror.css';
 
 
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = { code: "// Code" };
   }
-
-  getInitialState() {
-		return {
-			code: "// Code",
-		};
-	}
 
 	updateCode = (newCode) => {
 		this.setState({ code: newCode });
